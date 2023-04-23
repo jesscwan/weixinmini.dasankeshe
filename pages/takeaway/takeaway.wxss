@@ -1,0 +1,57 @@
+/* pages/takeaway/takeaway.wxss */
+page {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.swiper-item{
+  display: block;
+}
+.slide-image{
+  width: 100%;
+}
+swiper{
+  width: 100%;
+}
+.box1{
+  flex: 1;
+  display: flex;
+  overflow: hidden;
+}
+.box1 .box-1{
+  height: 100%;
+  overflow-y: scroll;
+  width: 200rpx;
+}
+.box1 .box-2{
+  height: 100%;
+  overflow-y: scroll;
+  width: 550rpx;
+}
+.btn{
+  background-color: orange;
+  border-radius: 30px;
+}
+.cart-popup {
+  position: fixed;
+  bottom: 50px;
+  background-color: white;
+  border: 1px solid black;
+  width: 100%;
+}
+.cart-popup-content{
+  display: flex;
+  flex-direction: column;
+}
+.textt{
+  display: flex;
+  flex-direction: row;
+}
+.item1{
+  display: flex;
+  flex:1;
+}
+.item2{
+  flex:2;
+}

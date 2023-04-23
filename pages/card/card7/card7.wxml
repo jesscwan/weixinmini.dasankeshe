@@ -1,0 +1,14 @@
+<!--pages/card/card7/card7.wxml-->
+<view class = "box">
+  <view class = "box1">
+    <text>套餐内容：</text>
+  </view>
+  <view class = "box2">
+    <text>脆脆薯条*1</text>
+    <text>麦乐鸡*5</text>
+    <text>麦麦脆汁鸡（鸡腿）*1</text>
+    <text>麦辣鸡翅*2</text>
+    <text>香芋派*1</text>
+    <text>套餐总价：48.9元</text>
+  </view>
+</view>

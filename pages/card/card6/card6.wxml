@@ -1,0 +1,19 @@
+<!--pages/card/card6/card6.wxml-->
+<view class = "box">
+  <view class = "box1">
+    <text>套餐内容：</text>
+  </view>
+  <view class = "box2">
+    <text>脆脆多笋卷*1</text>
+    <text>经典麦辣鸡腿堡*1</text>
+    <text>双层吉士汉堡*1</text>
+    <text>那么大鸡排（辣）*1</text>
+    <text>摇摇热辣龙虾风味鸡柳*6</text>
+    <text>脆脆薯条*1</text>
+    <text>麦乐鸡*5</text>
+    <text>可口可乐（中杯）*1</text>
+    <text>雪碧（中杯）*1</text>
+    <text>锡兰红茶*1</text>
+    <text>套餐总价：103.5元</text>
+  </view>
+</view>

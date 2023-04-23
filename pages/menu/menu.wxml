@@ -1,0 +1,12 @@
+<!--pages/menu/menu.wxml-->
+<!--首先是两个按钮来选择堂食还是外卖-->
+<view class = "choose">
+  <view class = "takeaway">
+   <image src="../image/11.jpg" class="takeaway_img" bindtap="Totakeaway"></image>
+  </view>
+  <view class = "dine-in">
+    <image src="../image/22.jpg" class="takeaway_img" bindtap="Todine"></image>
+  </view>
+</view>
+<!--接下来是活动和优惠信息，有机会补全，可以持续更新-->
+<!--先实现基本功能-->

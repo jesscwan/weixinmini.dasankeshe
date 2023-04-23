@@ -1,0 +1,12 @@
+<!--pages/card/card10/card10.wxml-->
+<view class = "box">
+  <view class = "box1">
+    <text>套餐内容：</text>
+  </view>
+  <view class = "box2">
+    <text>经典麦辣鸡腿堡*1</text>
+    <text>中薯条*1</text>
+    <text>可口可乐（中杯）*1</text>
+    <text>套餐总价：39元</text>
+  </view>
+</view>

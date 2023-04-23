@@ -1,0 +1,12 @@
+/* pages/card/card4/card4.wxss */
+.box{
+    display: flex;
+  }
+  .box1{
+    display: flex;
+    border: red;
+  }
+  .box2{
+    display: flex;
+    flex-direction: column;
+  }

@@ -1,0 +1,10 @@
+<view class="head">
+  <image src = "../image/headphoto.jpg" >
+  </image>
+  <!-- <image src = "../image/22.jpg"> -->
+  <!-- </image> -->
+</view>
+<view class = "body">
+  <button type = "button" bindtap="ToMenu">麦当劳我tm来辣
+  </button>
+</view>

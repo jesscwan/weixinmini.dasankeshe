@@ -1,0 +1,54 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/menu/menu",
+    "pages/logs/logs",
+    "pages/takeaway/takeaway",
+    "pages/dine/dine",
+    "pages/payment/payment",
+    "pages/card/card1/card1",
+    "pages/card/card2/card2",
+    "pages/card/card3/card4",
+    "pages/card/card3/card3",
+    "pages/card/card4/card4",
+    "pages/card/card5/card5",
+    "pages/card/card6/card6",
+    "pages/card/card7/card7",
+    "pages/card/card8/card8",
+    "pages/card/card9/card9",
+    "pages/card/card10/card10",
+    "pages/dividual/dividual"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Weixin",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json",
+  "requiredPrivateInfos": [
+    "getLocation"
+  ],
+  "permission": {
+    "scope.userLocation": {
+      "desc": "展示给客户看的信息"
+    }
+  },
+  "tabBar": {
+    "selectedColor": "#33a3dc",
+    "list": [
+      {
+        "text": "首页",
+        "pagePath": "pages/menu/menu",
+        "iconPath": "pages/image/xia1.png",
+        "selectedIconPath": "pages/image/xia1.png"
+      },
+      {
+        "text": "个人中心",
+        "pagePath": "pages/dividual/dividual",
+        "iconPath": "pages/image/xia2.png",
+        "selectedIconPath": "pages/image/xia2.png"
+      }
+    ]
+  }
+}

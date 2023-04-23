@@ -1,0 +1,12 @@
+<!--pages/card/card2/card2.wxml-->
+<view class = "box">
+  <view class = "box1">
+    <text>套餐内容：</text>
+  </view>
+  <view class = "box2">
+    <text>摇摇热辣龙虾风味鸡柳*6</text>
+    <text>摇摇热辣龙虾风味鸡柳*6</text>
+    <text>摇摇热辣龙虾风味鸡柳*6</text>
+    <text>套餐总价：39.9元</text>
+  </view>
+</view>

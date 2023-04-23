@@ -1,0 +1,4 @@
+<!--pages/payment/payment.wxml-->
+<view>
+  <image src = '/pages/image/success.png' class = "zhifu"></image>
+</view>

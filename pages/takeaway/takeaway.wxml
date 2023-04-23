@@ -1,0 +1,59 @@
+<!--pages/takeaway/takeaway.wxml-->
+<view class = "box">
+  <swiper indicator-dots="{{indicatorDots}}"
+    autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+    <block wx:for="{{imgUrls}}">
+      <swiper-item>
+        <image src="{{item}}" class="slide-image" />
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
+
+<view class = "box1">
+  <view class="box-1">
+    <van-sidebar>
+      <van-sidebar-item
+        wx:for="{{categories}}" wx:key="id"
+        title="{{item.name}}"
+        badge="{{ item.badge ? item.badge : '' }}"
+        data-idx="{{index}}" bind:click="categoryClick"
+      />
+    </van-sidebar>
+  </view>
+
+  <scroll-view class="box-2" scroll-y="true" scroll-top="{{scrolltop}}" bindscrolltolower="_onReachBottom">
+    <van-empty wx:if="{{!goods || goods.length == 0}}" description="暂无商品" />
+    <van-card 
+      wx:for="{{goods}}" wx:key="index"
+      centered="true"
+      lazy-load="true"
+      thumb-mode="aspectFill"
+      title="{{item.title}}"
+      desc="{{item.desc}}"
+      thumb-link="{{item.link}}"
+      price="{{item.price}}"
+      tag="{{item.tag}}"
+      thumb = "{{item.image}}" class="card">
+      <view class="goods-btn" slot="footer">
+        <van-button size="small" class="btn" bindtap="countprice" data-price="{{item.price}}" data-title="{{item.title}}" data-idx="{{item.id}}">加入购物车</van-button>
+      </view>
+    </van-card>
+    <van-goods-action>
+      <van-goods-action-icon icon="cart-o" text="购物车" info="{{shoppingcartnum}}" bind:click="showCartPopup" />
+      <van-goods-action-button text="立即购买" bindtap="onClickButton" />
+    </van-goods-action>
+  </scroll-view>
+</view>
+<!-- 购物车弹出框 -->
+<view class="cart-popup" wx:if="{{showCart}}">
+  <view class="cart-popup-content">
+    <view>...购物车内容...</view>
+      <view class = "textt" wx:for="{{array1}}" wx:key="index" >
+        <text class="item1">{{item.name}}</text>
+        <text class="item2">数量：{{item.number}}</text>
+        <text class="item3">单价：{{item.price}}</text>
+      </view>
+    <view>总价：{{sumprice}}</view>
+  </view>
+</view>
